@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog_db',
-	'USER': 'root',
-	'PASSWORD': 'Staraszkola#20',
-	'HOST': '127.0.0.1',
-	'PORT': '3307' if os.getenv('CI') else '3306'
+	'USER': 'coursera',
+	'PASSWORD': 'coursera',
+	'HOST': 'coursera-mysql-instance.ca7gm6ge2u1z.us-east-1.rds.amazonaws.com',
+	'PORT': '3306'
     }
 }
 
